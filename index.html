@@ -13,7 +13,7 @@
       </form>
       <div class="messages-container">
         <p ng-repeat="message in messages | orderBy:'createdAt':true">
-          {{message.createdAt | date}} -- {{message.message}}</p>
+          {{message.createdAt | date:'MMM d, y @ h:mm:ss a'}} -- {{message.message}}</p>
       </div>
     </div>
 
